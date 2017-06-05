@@ -1,51 +1,34 @@
 ﻿using System;
+using System.Drawing;
+using Console = Colorful.Console;
 
 namespace AkkaPlayground
 {
     public static class ColorConsole
     {
-        public static void WriteLineGreen(string message)
+        public static void WriteWhite(string message)
         {
-            var beforeColor = Console.ForegroundColor;
-
-            Console.ForegroundColor = ConsoleColor.Green;
-
-            Console.WriteLine(message);
-
-            Console.ForegroundColor = beforeColor;
+            Console.WriteLine(message, Color.White);
         }
 
-        public static void WriteLineYellow(string message)
+        public static void WriteRed(string message)
         {
-            var beforeColor = Console.ForegroundColor;
-
-            Console.ForegroundColor = ConsoleColor.Yellow;
-
-            Console.WriteLine(message);
-
-            Console.ForegroundColor = beforeColor;
+            Console.WriteLine(message, Color.Red);
         }
 
-        public static void WriteLineRed(string message)
+        public static void WriteGreen(string message)
         {
-            var beforeColor = Console.ForegroundColor;
-
-            Console.ForegroundColor = ConsoleColor.Red;
-
-            Console.WriteLine(message);
-
-            Console.ForegroundColor = beforeColor;
+            Console.WriteLine(message, Color.MediumSeaGreen);
         }
 
-        public static void WriteLineCyan(string message)
+        public static void WriteOrange(string message)
         {
-            var beforeColor = Console.ForegroundColor;
+            Console.WriteLine(message, Color.DarkOrange);
+        }
 
-            Console.ForegroundColor = ConsoleColor.Cyan;
-
-            Console.WriteLine(message);
-
-            Console.ForegroundColor = beforeColor;
+        public static void WriteViolet(string message)
+        {
+            Console.WriteLine(message, Color.BlueViolet);
         }
     }
 }
