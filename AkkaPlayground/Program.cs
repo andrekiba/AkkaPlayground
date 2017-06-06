@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.Remoting.Messaging;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
@@ -31,6 +32,10 @@ namespace AkkaPlayground
         {
             ActorSystem = ActorSystem.Create("TestActorSystem");
 
+            //default
+            //var controllerProp = Props.Create<TestControllerActor>()
+            //    .WithSupervisorStrategy(new OneForOneStrategy(e => Directive.Restart));
+            //TestController = ActorSystem.ActorOf(controllerProp, "TestController");
             TestController = ActorSystem.ActorOf<TestControllerActor>("TestController");
 
             DisplayInstructions();

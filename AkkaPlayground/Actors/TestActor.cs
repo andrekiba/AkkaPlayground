@@ -20,6 +20,8 @@ namespace AkkaPlayground.Actors
                 Sender.Tell(new AsyncResponseMessage());
             });
 
+            //ReceiveAsync<int>(async m => await DelayAndReturnZero());
+
             ColorConsole.WriteViolet($"TestActor '{actorName}' created");
         }
 

@@ -86,9 +86,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actors\DeliveryActor.cs" />
     <Compile Include="Actors\TestControllerActor.cs" />
     <Compile Include="Actors\TestActor.cs" />
     <Compile Include="ColorConsole.cs" />
+    <Compile Include="Messages\Ack.cs" />
     <Compile Include="Messages\AsyncResponseMessage.cs" />
     <Compile Include="Messages\AsyncTaskMessage.cs" />
     <Compile Include="Messages\CreateTestActor.cs" />
