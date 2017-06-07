@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkkaPlayground", "AkkaPlayground\AkkaPlayground.csproj", "{619C777E-CD6D-4046-8239-2945BE97F205}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkkaPlayground.Test", "AkkaPlayground.Test\AkkaPlayground.Test.csproj", "{2D641841-1BBC-40FB-B6B0-4B4EEE9097C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{619C777E-CD6D-4046-8239-2945BE97F205}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{619C777E-CD6D-4046-8239-2945BE97F205}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{619C777E-CD6D-4046-8239-2945BE97F205}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D641841-1BBC-40FB-B6B0-4B4EEE9097C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D641841-1BBC-40FB-B6B0-4B4EEE9097C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D641841-1BBC-40FB-B6B0-4B4EEE9097C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D641841-1BBC-40FB-B6B0-4B4EEE9097C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
